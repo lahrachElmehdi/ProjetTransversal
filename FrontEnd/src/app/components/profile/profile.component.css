@@ -1,0 +1,9 @@
+.small-video {
+    max-height: 70vh;
+    width: 100vw;
+    object-fit: contain;
+}
+
+/deep/ body {
+    background-color: #F2F3F3;
+}

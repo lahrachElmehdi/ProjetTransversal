@@ -1,3 +1,33 @@
-<p>
-  login works!
-</p>
+<img src="../../../assets/imgs/logo.png" alt="" class="mx-auto d-block logo_img ">
+<div class="modal-dialog text-center">
+  <div class="col-sm-10 main-section">
+    <div class="modal-content">
+      <div class="col-12 user-img">
+          <img src="../../../assets/imgs/face.png" >
+      </div>
+      <form class="col-12" #loginForm=ngForm (ngSubmit)="onSubmit()">
+
+          <div class="form-group">
+            <input type="email" name="email" class="form-control" placeholder="example@domaine.com"
+              [(ngModel)]="form.email" required>
+          </div>
+
+          <div class="form-group passwordLock">
+            <input type="password" name="password" class="form-control" placeholder="**********"
+              [(ngModel)]="form.password" required>
+          </div>
+
+          <div class="alert alert-danger" [hidden] ='!error'>
+              {{error}}
+          </div>
+
+          <button type="submit" class="btn"><i class="fa fa-sign-in"></i> Login</button>
+
+          <div class="col-12 forgot">
+              <a routerLink="/request-password-reset">Forgot password ? </a>
+          </div>
+
+      </form>
+    </div>
+  </div>
+</div>

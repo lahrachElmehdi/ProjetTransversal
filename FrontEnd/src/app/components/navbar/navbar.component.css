@@ -1,0 +1,65 @@
+.bg-light {
+  background-color: #fff !important;
+}
+
+:host body{
+  background-color: red !important;
+}
+.navbar {
+  min-height: 100px;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  height: 100px;
+  line-height: 100px;
+}
+
+.navbar-toggle {
+
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+    line-height: 27px;
+  }
+
+}
+.navbar-brand > img {
+  margin-top: 30px;
+  width: 75%; 
+  height: auto;
+}
+
+.dropdown-toggle::after {
+  display: none;
+} 
+
+.dropdown_menu {  
+ margin-right: 50px;
+}
+
+.dropdown_menu  i {  
+  font-size: 17px;
+  color: #333333 
+ }
+
+ #ProfilePic {
+   margin-right: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background: #0073BE;
+}
+#name {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  
+  line-height: 50px;
+}

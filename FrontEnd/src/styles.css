@@ -2,3 +2,26 @@
 
 
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import "../node_modules/font-awesome/css/font-awesome.css";
+
+/*body {
+    background-color: #F2F3F3;
+}*/
+
+.test{
+    color: #fff;
+    background-color: #e6325a;
+    border-color: #e6325a;
+    box-shadow: none;
+    font-weight: 400;
+    text-align: center;
+    white-space: normal;
+    vertical-align: middle;
+}
+.test:hover{
+    
+    color: #fff;
+    background-color: #cc1941;
+    border-color: #cc1941;
+    
+}

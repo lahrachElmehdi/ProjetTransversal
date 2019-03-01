@@ -1,4 +1,30 @@
 <nav class="navbar navbar-light bg-light justify-content-between">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <a class="navbar-brand" href="#">Login</a> 
+  <a class="navbar-brand" href="#">
+    <img src="../../../assets/imgs/logo.png" class="d-inline-block align-top" alt="">
+  </a>
+  <div>
+    <a class="navbar-brand" routerLink="login" *ngIf="!loggedIn">Login</a>
+    <!-- a class="navbar-brand" routerLink="profile" *ngIf="loggedIn">Profile</a-->
+    <div class="form-inline">
+      
+      <div id="ProfilePic">
+        <div [innerHTML]="name" id="name" >
+          
+         </div>
+      </div>
+    <div class="dropdown dropdown_menu">
+      <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+       <i class="fa fa-ellipsis-v"></i>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#">Something else here</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+    <button type="button" class="btn test my-2 my-sm-0" *ngIf="loggedIn" (click)="logout($event)">
+        <i class="fa fa-sign-out"></i>Déconnexion
+    </button>
+  </div>
+  </div>
 </nav>
