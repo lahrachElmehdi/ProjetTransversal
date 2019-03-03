@@ -24,6 +24,7 @@ import { EmployeurService } from './Services/Employeur/employeur.service';
 // the scanner!
 import { ZXingScannerModule } from '@zxing/ngx-scanner';
 import { CommercantComponent } from './components/commercant/commercant.component';
+import { PasswordManager } from './components/profile/profile.password.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { CommercantComponent } from './components/commercant/commercant.componen
     SidemenuComponent,
     EmployeurComponent,
     CommercantComponent,
+    PasswordManager,
     
   ],
   imports: [

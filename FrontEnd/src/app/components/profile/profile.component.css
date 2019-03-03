@@ -3,7 +3,26 @@
     width: 100vw;
     object-fit: contain;
 }
-
+.profile-manager-item{
+    padding: 5px;
+    border-bottom: 1px solid;
+    background-color: #ddffff;
+    border-color: #2196F3;
+    border-left: 2px solid #2196F3;
+    border-radius: 7px;
+    margin-bottom: 6px;
+}
+div.profile-manager-item:hover {
+    box-shadow: 5px 2px 5px 1px #2196F3;
+    transition: box-shadow 0.4s ease-in-out;
+}
+.li-profile-item{
+    display: flex;
+    justify-content: space-between;
+}
+password-manager {
+    position: absolute;
+}
 /deep/ body {
     background-color: #F2F3F3;
 }

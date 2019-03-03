@@ -7,11 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit  {
+  show: boolean = false;
 
   constructor() { }
   ngOnInit() {
   
   }
+
+  showForm(e){
+    e.preventDefault();
+    this.show = true;
+  }
+
+  
 
 
 

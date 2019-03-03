@@ -28,7 +28,7 @@ const appRoutes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent,
-    canActivate:[AfterLoginService],
+    canActivate:[BeforeLoginService],
   },
   {
     path: 'request-password-reset',
