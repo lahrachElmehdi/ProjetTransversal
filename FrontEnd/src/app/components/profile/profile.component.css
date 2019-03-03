@@ -22,6 +22,7 @@ div.profile-manager-item:hover {
 }
 password-manager {
     position: absolute;
+
 }
 /deep/ body {
     background-color: #F2F3F3;
